@@ -1,0 +1,145 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.header {
+    background-color: #333;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo {
+    width: 80px;
+}
+
+.navbar__links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__links li {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.navbar__links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar__links li a:hover {
+    color: #ddd;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer p {
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertext {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+
+
+/* Estilos para el menú hamburguesa */
+.navbar__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar__hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #fc4a4a;
+}
+
+.navbar__hamburger.active span {
+    background-color: #fff;
+}
+
+.navbar__hamburger.active span:before,
+.navbar__hamburger.active span:after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.navbar__hamburger.active span:before {
+    transform-origin: top left;
+}
+
+.navbar__hamburger.active span:after {
+    transform-origin: bottom left;
+}
+
+.navbar__hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar__hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar__hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    /* .navbar__links {
+        display: none;
+    } */
+
+    .navbar__hamburger {
+        display: block;
+    }
+}
