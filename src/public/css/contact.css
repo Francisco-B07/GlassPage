@@ -25,9 +25,11 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #419f46;
+    color: rgb(241, 241, 241);
+    cursor: zoom-in;
 }
 
 form input::placeholder {
-    color: #999;
+    color: #dedede;
 }

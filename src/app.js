@@ -1,7 +1,7 @@
 import path from 'path';
 import express from 'express';
 import { engine } from 'express-handlebars'
-import {__dirname} from './utils/utils.js';
+import { __dirname } from './utils/utils.js';
 
 const PORT = 3000;
 
@@ -9,10 +9,10 @@ const app = express();
 
 app.engine('handlebars', engine({
     runtimeOptions: {
-      allowProtoPropertiesByDefault: true,
-      allowProtoMethodsByDefault: true
+        allowProtoPropertiesByDefault: true,
+        allowProtoMethodsByDefault: true
     }
-  }));
+}));
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, '../views'));
 
@@ -31,7 +31,8 @@ app.get('/', (req, res) => {
 app.get('/products', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.status(200).render('products', {
-        style: "./css/products.css"
+        style: "./css/products.css",
+        header:true
     });
 })
 app.get('/contact', (req, res) => {
