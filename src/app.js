@@ -29,8 +29,7 @@ app.get('/', (req, res) => {
 
 app.get('/products', (req, res) => {
   res.render('products', {
-    style: "/css/products.css",
-    header: true
+    style: "/css/products.css"
   });
 });
 
