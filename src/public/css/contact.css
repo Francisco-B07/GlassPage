@@ -1,35 +1,47 @@
 main {
-    margin: 10rem;
+  margin: 10rem;
 }
 
 form {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 form input {
-    display: block;
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #419f46;
-    color: rgb(241, 241, 241);
-    cursor: zoom-in;
+  background-color: #419f46;
+  color: rgb(241, 241, 241);
+  cursor: zoom-in;
 }
 
 form input::placeholder {
-    color: #dedede;
+  color: #dedede;
+}
+
+.contenido {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contenido {
+    width: 100%;
+  }
 }

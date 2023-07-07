@@ -36,11 +36,58 @@ p {
 .card {
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: auto;
+}
+
+.card img {
+  width: fit-content;
 }
 
 @media (max-width: 768px) {
   .card {
     flex-direction: column;
   }
+}
+
+/* Carta de Perfil */
+
+.cardProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #888888;
 }
